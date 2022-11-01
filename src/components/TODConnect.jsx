@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import StateBox from './StateBox';
+import Button from './Button';
 
 export default function TODConnect({todConnection, setTodConnection, AIVersion}) {
     const [connectionTry, setConnectionTry] = useState("연결");
@@ -19,17 +20,16 @@ export default function TODConnect({todConnection, setTodConnection, AIVersion})
             {todConnection === 1 &&
                 <StateBox color ="green">연결 완료</StateBox>
             }
-            <button className="input-btn" onClick={(e) => {
+            <Button onClick={(e) => {
                 e.preventDefault();
                 console.log({AIVersion});
                 if (AIVersion==='Select AI ver.') {
                     alert("AI Version을 선택하세요.");
                 } else {
-                    console.log('연결 시도');
                     setConnectionTry("재연결");
                     setTodConnection(0);
                 }
-            }}>{connectionTry}</button>
+            }}>{connectionTry}</Button>
         </div>
      )
 }
