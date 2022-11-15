@@ -4,7 +4,7 @@ import BottomStateBox from './BottomStateBox';
 
 export default function BottomState({ warningState }) {
   return (
-    <div className='bottom-state-box'>
+    <div className='bottom-element'>
         {warningState === -1 &&
             <BottomStateBox color = "green">정상 상황</BottomStateBox>
         }

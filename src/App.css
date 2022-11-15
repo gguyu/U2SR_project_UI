@@ -3,25 +3,26 @@
   text-align: center;
 }
 
+body {
+  font-family: 'nanumsquare';
+}
+
 .container{
   width: 100%;
   height: 100vh;
 }
 
-body {
-  font-family: 'nanumsquare';
-}
 
 /* 상단 (TOD 연결 상태, AI Version 선택, 경고기능 작동 여부, 경고기능 시간 설정) */
 .top-area {
   background: black;
   width: 98%;
-  height: 25px;
+  height: 1vh;
   padding: 1%;
   display: flex;
   color: white;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 2vmin;
   align-items: center;
   position: relative;
 }
@@ -30,16 +31,19 @@ body {
   margin-left: 1%;
   margin-right: 1%;
   display: flex;
+  font-size: 2vmin;
+  align-items: center;
 }
 
 /* TOD 연결 상태 및 상태 박스들 (color 제어 용도) */
 .state-box {
   background: red;
-  width: 130px;
+  width: 5vw;
+  height: 2.2vh;
+  padding: 2%;
 }
 .red {
   background: red;
-  width: 100px;
 }
 .orange {
   background: orange;
@@ -50,17 +54,20 @@ body {
 
 /* 입력 박스 */
 .input-box {
-  width: 50px;
+  width: 2.4vw;
+  height: 2.2vh;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 2vmin;
   align-items: center;
 }
 
 /* 입력 버튼 */
 .input-btn {
-  width: 60px;
-  height: 26px;
+  width: 3vw;
+  height: 3vh;
+  margin-left: 0.2%;
   margin-right: 2%;
+  font-size: 1.3vmin;
   cursor: pointer;
 }
 .input-btn:hover {
@@ -103,13 +110,30 @@ body {
   background: gray;
 }
 
+.warning-function {
+  width: 10vw;
+  height: 2.2vh;
+  padding: 2%;
+  font-size: 2vmin;
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+}
+.font-gray {
+  color: gray;
+}
+.font-red {
+  color: red;
+}
+
 /* 중단 (영상 재생, 상황 목록 출력) */
 .mid-area {
+  display: flex;
+  /* grid-template-columns: 3fr 1fr; */
   background: gray;
   width: 98%;
-  height: 647px;
+  height: 76.7vh;
   padding: 1%;
-  display: flex;
   color: white;
   font-weight: 600;
   font-size: 15px;
@@ -118,7 +142,7 @@ body {
 
 .mid-video {
   width:70%;
-  height:647px;
+  height:75vmin;
   border-width: 1px 1px 1px 1px;
   border-color: white;
   border-style: solid double solid double;
@@ -126,7 +150,7 @@ body {
 
 .mid-log {
   width:30%;
-  height:647px;
+  height:75vmin;
   border-width: 1px 1px 1px 1px;
   border-color: white;
   border-style: solid double solid double;
@@ -136,19 +160,19 @@ body {
 .bottom-area {
   background: black;
   width: 98%;
-  height: 100px;
+  height: 11.6vh;
   padding: 1%;
   display: flex;
   color: white;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 2vmin;
   align-items: center;
   position: relative;
 }
 
 .bottom-element {
-  width: 100%;
-  height: 100px;
+  width: 20%;
+  height: 13vh;
   display: flex;
   border-width: 1px 1px 1px 1px;
   border-color: white;
@@ -156,26 +180,27 @@ body {
 }
 
 .bottom-display-info {
-  width:30%;
-  height:100px;
+  width: 30%;
+  height: 13vh;
   border-width: 1px 1px 1px 1px;
   border-color: white;
   border-style: solid double solid double;
-  margin: auto;
+  font-size: 4vmin;
 }
 
 .bottom-object {
-  width:50%;
-  height:100px;
+  width: 50%;
+  height: 13vh;
   border-width: 1px 1px 1px 1px;
   border-color: white;
   border-style: solid double solid double;
   align-items: center;
+  font-size: 4vmin;
 }
 
 .bottom-state-box {
-  width:20%;
-  height:100px;
+  width:100%;
+  height:100%;
   align-items: center;
-  font-size: 20px;
+  font-size: 8vmin;
 }
